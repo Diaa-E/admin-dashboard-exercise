@@ -79,21 +79,23 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
-    gap: 20px;
+    gap: 5px;
     place-content: center stretch;
     place-items: center stretch;
 }
 
-#search-icon, #notification{
-    height: 16px;
-}
 
-.notification{
+.notification-bar{
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     gap: 30px;
     place-items: center;
     place-content: center;
+}
+
+.notification-bar label{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .user-avatar{
@@ -102,7 +104,7 @@
     border-radius: 50%;
 }
 
-.search{
+.search-bar{
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     gap: 10px;
@@ -111,7 +113,7 @@
     place-content: center;
 }
 
-.search input{
+.search-bar input{
     font-size: 16px;
     border: none;
     background-color: var(--feed-bg);
@@ -121,6 +123,17 @@
     flex: 1;
 }
 
+.user{
+    display: flex;
+    place-items: center;
+    place-content: center;
+    gap: 20px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
 
 .feed{
     z-index: 0;
@@ -137,6 +150,10 @@
     height: 32px;
 }
 
+#search-icon, #notification{
+    height: 24px;
+}
+
 #first{
     grid-row: 1 / 2;
 }
@@ -149,4 +166,18 @@
     grid-row: 3 / 4;
 }
 
+#user{
+    width: 70px;
+    height: 70px;
+}
+
+#greeting{
+    font-size: 16px;
+    color: var(--font-greyed);
+}
+
+#handle{
+    font-weight: bold;
+    font-size: 24px;
+}
 
