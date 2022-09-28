@@ -118,7 +118,7 @@
     border: none;
     background-color: var(--feed-bg);
     border-radius: 10px;
-    padding: 2px;
+    padding: 5px;
     color: var(--font-dark);
     flex: 1;
 }
@@ -140,6 +140,31 @@
     background-color: var(--feed-bg);
     color: var(--font-dark);
     grid-area: 2 / 2 / 3 / 3;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.articles{
+    grid-area: 1 / 1 / 2 / 2;
+
+    display: grid;
+    text-align: left;
+    gap: 20px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, min-content);
+}
+
+.articles p{
+    grid-area: 1 / 1 / 2 / -1;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.article-card{
+    
 }
 
 .logo{
