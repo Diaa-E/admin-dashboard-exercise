@@ -33,7 +33,7 @@
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: min-content 1fr;
     place-items: stretch stretch;
     place-content: stretch stretch;
     background-color: white;
